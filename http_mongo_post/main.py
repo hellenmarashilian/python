@@ -14,7 +14,7 @@ config.read('config.ini')
 client = MongoClient(config["settings"]["db_connection_string"])
 db_accounts = client["accounts"]
 
-
+#test test
 @app.get("/users")
 def users_all():
     users_collection = db_accounts["users"]
